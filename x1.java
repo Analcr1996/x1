@@ -19,7 +19,7 @@ void setup() {
 //// NEXT FRAME:  scene, action, show.
 void draw() {
   //// SCENE:  sky, sun, tree, house, etc.
-  background( 100,150,200 );                // sky
+  background( 100,200,260 );                // sky
   fill( 255,255,0 );
   ellipse( width*3/4, height/8, 40,40 );    // sun
   // Grass
@@ -61,6 +61,7 @@ void keyPressed() {
     exit();                           // press 'q' key to QUIT.
   }
 }
+   
    
    
 
