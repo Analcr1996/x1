@@ -26,9 +26,7 @@ void draw() {
   fill( 100,200,100 );
   rect(0,horizon, width/1,height*3/4 );      // grass.
   
-  /* INSERT YOUR CODE HERE! */
- fill(210, 960, 980);
- triangle(10, 35, 25, 5, 40, 36  );  // tree
+
   
   fill(127, 0, 0);
   rect( 25, 25, 19, 50);
@@ -36,8 +34,19 @@ void draw() {
   fill(100, 200, 100);
 arc(35, 30, 60, 60, PI, TWO_PI);
  
-  text( "This is NOT a good tree; please fix it!", 150,horizon );
-                                            // house
+ fill(209);
+rect( 295, 35, 20, 40); 
+rect(315, 35, 50, 40 );// house
+rect(356, 35, 20, 40);
+triangle(377, 35, 330, 8, 293, 35  );
+
+fill(162);
+rect( 330, 65, 10, 10);
+
+fill(50, 150, 800);
+rect( 301, 41, 9, 13);
+rect( 362, 41, 9, 13);
+rect( 322, 41, 26, 16);
 
   fill(0);
   text( "My name is Annie", 10,height-20 );                                          
@@ -50,6 +59,7 @@ arc(35, 30, 60, 60, PI, TWO_PI);
 
   /* INSERT YOUR CODE HERE! */
   fill(255,0,0); rect( x,y, 30,50 );        /* REPLACE THIS WITH YOUR OWN CODE! */
+
   text( "Tim", x,y );
 
 }
@@ -60,13 +70,15 @@ void mousePressed() {
   x=  mouseX;                             // Set (x,y) to mouse
   y=  mouseY;
   //
+  
   dx=  random( -6, +6 );                  // random speed.
   dy=  random( -4, +4 );
 }
 
 void keyPressed() {
   if (key == 'q') {
-    exit();                           // press 'q' key to QUIT.
+    exit();    // press 'q' key to QUIT.
+      
   }
 }
    
