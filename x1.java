@@ -40,7 +40,7 @@ arc(35, 30, 60, 60, PI, TWO_PI);
                                             // house
 
   fill(0);
-  text( "My name is Mud", 10,height-20 );                                          
+  text( "My name is Annie", 10,height-20 );                                          
                                             
   //// ACTION:  move (x,y) coordinates.
   x=  x + dx;
@@ -50,7 +50,7 @@ arc(35, 30, 60, 60, PI, TWO_PI);
 
   /* INSERT YOUR CODE HERE! */
   fill(255,0,0); rect( x,y, 30,50 );        /* REPLACE THIS WITH YOUR OWN CODE! */
-  text( "Fred", x,y );
+  text( "Tim", x,y );
 
 }
 
@@ -70,5 +70,7 @@ void keyPressed() {
   }
 }
    
+   
+
    
 
