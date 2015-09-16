@@ -48,12 +48,49 @@ rect( 301, 41, 9, 13);
 rect( 362, 41, 9, 13);
 rect( 322, 41, 26, 16);
 
+
+fill(50);
+rect(20,200,50,55);
+fill(50, 150, 800);
+rect(25,210, 13, 10);
+rect(50, 210, 13,10);
+
+fill(50);
+triangle(18, 199, 45, 160, 73, 199);
+fill(0);
+rect(37, 236, 13, 20);
+
+fill(50, 150, 800);
+ellipse(44,186,14,14);
+
+fill(127, 0, 0);
+ rect( 81, 155, 100, 60);
+
+
+fill(5,140,99);
+arc(130, 190, 60, 60, PI, TWO_PI);
+fill(0,99);
+arc(130, 190, 50, 50, PI, TWO_PI);
+fill(1,100);
+arc(130, 190, 40, 40, PI, TWO_PI);
+fill(2,101);
+arc(130, 190, 30, 30, PI, TWO_PI);
+fill(3, 102);
+arc(130, 190, 20, 20, PI, TWO_PI);
+fill(4,103);
+arc(130, 190, 10, 10, PI, TWO_PI);
+
+
+
+
   fill(0);
   text( "My name is Annie", 10,height-20 );                                          
                                             
   //// ACTION:  move (x,y) coordinates.
   x=  x + dx;
   y=  y + dy;
+  
+
   
   //// SHOW:  display the creature at (x,y)
 
@@ -69,16 +106,20 @@ rect( 322, 41, 26, 16);
 void mousePressed() {
   x=  mouseX;                             // Set (x,y) to mouse
   y=  mouseY;
-  //
+ 
+
   
-  dx=  random( -6, +6 );                  // random speed.
-  dy=  random( -4, +4 );
+  dx=  random( -4, +5 );                  // random speed.
+  dy=  random( -2, +3 );
+
 }
+
+
 
 void keyPressed() {
   if (key == 'q') {
     exit();    // press 'q' key to QUIT.
-      
+ 
   }
 }
    
